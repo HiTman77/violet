@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "themes": {
+        "violet": {
+            "name": "Violet",
+            "repo": "https://github.com/HiTman77/violet",
+            "zip": "https://github.com/HiTman77/violet/archive/master.zip",
+            "summary": "Violet",
+            "version": "2.0.2",
+            "image": "https://raw.githubusercontent.com/HiTman77/violet/main/preview.jpg"
+        }
+    }
+}
