@@ -1,8 +1,7 @@
 <?php global $Wcms ?>
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +13,7 @@
 		<meta property="og:site_name" content="<?= $Wcms->get('config', 'siteTitle') ?>" />
 		<meta property="og:title" content="<?= $Wcms->page('title') ?>" />
 		<meta name="twitter:site" content="<?= $this->url() ?>" />
-		<meta name="twitter:title" content="<?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?>" />
+		<meta name="twitter:title" content="<?= $Wcms->page('title') ?> - <?= $Wcms->get('config', 'siteTitle') ?>" />
 		<meta name="twitter:description" content="<?= $Wcms->page('description') ?>" />
 		<title><?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?></title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -24,7 +23,6 @@
 	<body class="d-flex flex-column">
 		<?= $Wcms->settings() ?>
 		<?= $Wcms->alerts() ?>
-
 		<nav class="navbar navbar-expand-lg navbar-light navbar-default">
 			<div class="container">
 				<a class="navbar-brand" href="<?= $Wcms->url() ?>"><a class="navbar-brand" href="/"><img src="/data/files/logo.png" alt="<?= $Wcms->siteTitle() ?>"></a>
@@ -48,7 +46,7 @@
 		</nav>
         <section class="container mt-5 mb-5">
             <div class="row">
-				<div class="col-lg-12 my-auto text-center padding40">
+				<div class="col-lg-12 my-auto text-left padding40">
 								<h3 align="center"><?= $Wcms->page('keywords') ?></h3>
 				<h4 align="center"><?= $Wcms->page('description') ?></h4>
 					<?= $Wcms->page('content') ?>
@@ -58,13 +56,13 @@
     	<div class="h-05"></div>	
     	<section class="container-fluid mt-5 mb-5 flex-grow">
     	    <div class="row blueBackground">
-				<div class="col-lg-12 my-auto text-center padding40">
+				<div class="col-lg-12 my-auto text-left padding40">
 					<?= $Wcms->block('subside') ?>
 				</div>
     		</div>
     	</section>
         <footer class="mt-4 footer">
-            <div class="container-fluid py-3 text-right">
+            <div class="container-fluid py-3 text-left">
         				<?= $Wcms->footer() ?>
             </div>
         </footer>
