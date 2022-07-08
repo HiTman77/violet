@@ -16,16 +16,16 @@
 		<meta name="twitter:title" content="<?= $Wcms->page('title') ?> - <?= $Wcms->get('config', 'siteTitle') ?>" />
 		<meta name="twitter:description" content="<?= $Wcms->page('description') ?>" />
 		<title><?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?></title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<?= $Wcms->css() ?>
-		<link rel="stylesheet" href="<?= $Wcms->asset('css/style.css') ?>?v1">
+<link rel="stylesheet" rel="preload" as="style" href="<?= $Wcms->asset('css/style.css') ?>?v<?php echo(rand(1,33));?><?php echo(rand(1,20));?>">
 	</head>
 	<body class="d-flex flex-column">
 		<?= $Wcms->settings() ?>
 		<?= $Wcms->alerts() ?>
 		<nav class="navbar navbar-expand-lg navbar-light navbar-default">
 			<div class="container">
-				<a class="navbar-brand" href="<?= $Wcms->url() ?>"><a class="navbar-brand" href="/"><img src="/data/files/logo.png" alt="<?= $Wcms->siteTitle() ?>"></a>
+				<a class="navbar-brand" href="/"><a class="navbar-brand" href="/"><img src="/data/files/logo.png" alt="<?= $Wcms->siteTitle() ?>"></a>
 
 				<div class="navbar-header">
     				<button type="button" class="navbar-toggler navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
